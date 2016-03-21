@@ -2,9 +2,13 @@
     class homepageController extends controller {
       
       public function get() {
-        $this->html .= '<a href="index.php?controller=carController">Car
-	Controller</a>';
+        
 	session_start();
+	$finalTable = new table($_SESSION)
+	$this->html .= '<a href="index.php?controller=carController">New Car</a>';
+	
+	
+	
 	print_r($_SESSION);
       }
       public function post() {}
